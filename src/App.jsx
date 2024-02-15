@@ -13,7 +13,6 @@ function App() {
       <Menu></Menu>
       {/* <Inicio></Inicio> */}
       {/* <Administrador></Administrador> */}
- 
       <Error404></Error404>
       <Footer></Footer>
     </>
