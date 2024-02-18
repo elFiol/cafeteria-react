@@ -46,3 +46,20 @@
     height: 200px;
     object-fit: cover;
 }
+.imagenDetalle{
+  object-fit: cover;
+  width: 100%;
+}
+.detalle {
+  border: 2px rgba(0, 0, 0, 0.329) solid;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .imagenDetalle{
+    width: 50%;
+  }
+  .detalle{
+    display: flex;
+  }
+}

@@ -7,6 +7,7 @@ import Administrador from "./components/pages/Administrador";
 import Inicio from "./components/pages/Inicio";
 import FormularioProducto from "./components/pages/producto/FormularioProducto";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DetalleProducto from "./components/pages/DetalleProducto";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route exact path="/administrador"
           element={<Administrador></Administrador>}
         ></Route>
+        <Route exact path="/detalleProducto" element={<DetalleProducto></DetalleProducto>}></Route>
+        <Route exact path="/FormularioProducto" element={<FormularioProducto></FormularioProducto>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
