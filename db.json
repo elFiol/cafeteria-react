@@ -7,7 +7,7 @@
             "categoria":"Infusiones",
             "descripcionBreve": "café rico",
             "descripcionAmplia": "café rico con mas detalles",
-            "imagen":"url"
+            "imagen":"https://images.pexels.com/photos/414555/pexels-photo-414555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
             "id":"2",
@@ -16,7 +16,7 @@
             "categoria":"Infusiones",
             "descripcionBreve": "té rico",
             "descripcionAmplia": "té rico con mas detalles",
-            "imagen":"url"
+            "imagen":"https://cloudfront-us-east-1.images.arcpublishing.com/semana/SEP3XASCANE2PO47OWI7PFWK3E.jpg"
         }
     ]
 }
