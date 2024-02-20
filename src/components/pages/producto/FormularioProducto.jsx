@@ -1,8 +1,8 @@
 import { Form, Button } from "react-bootstrap";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 
 const FormularioProducto = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors }, control } = useForm();
 
   const productoValidado = (producto) => {
     console.log(producto)
@@ -69,46 +69,80 @@ const FormularioProducto = () => {
               pattern: {
                 value: /^((https?|ftp):\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(\/\S*)?$/i,
                 message: "Por favor, ingresa una URL válida"
-              }
+              },
+              required: "la imagen es obligatoria"
             })}
           />
           <Form.Text className="text-danger">
             {errors.imagen?.message}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formPrecio">
+        <Form.Group className="mb-3" controlId="formCategoria">
           <Form.Label>Categoría*</Form.Label>
-          <Form.Select>
-            <option value="">Seleccione una opcion</option>
-            <option value="Infusiones">Infusiones</option>
-            <option value="Batidos">Batidos</option>
-            <option value="dulce">Dulce</option>
-            <option value="salado">Salado</option>
-          </Form.Select>
+          <Controller
+            name="categoria"
+            control={control}
+            rules={{ required: "Seleccione una categoría" }}
+            render={({ field }) => (
+              <Form.Select {...field}>
+                <option value="">Seleccione una opcion</option>
+                <option value="Infusiones">Infusiones</option>
+                <option value="Batidos">Batidos</option>
+                <option value="dulce">Dulce</option>
+                <option value="salado">Salado</option>
+              </Form.Select>
+            )}
+          />
           <Form.Text className="text-danger">
-            prueba de error
+            {errors.categoria?.message}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formImagen">
+        <Form.Group className="mb-3" controlId="formDescripcionBreve">
           <Form.Label>Descripción breve*</Form.Label>
           <Form.Control
             type="text"
             placeholder="Ej: Una taza de café suave y aromático."
             as="textarea"
+            {
+              ...register("descripcionBreve", {
+                required: "la descripcion breve es requerida",
+                maxLength: {
+                  value: 60,
+                  message: "la descripcion breve solo puede tener 60 caracteres como maximo"
+                },
+                minLength: {
+                  value: 10,
+                  message: "las descripcion debe contener por lo menos 10 caracteres"
+                }
+              })
+            }
           />
           <Form.Text className="text-danger">
-            prueba de error
+            {errors.descripcionBreve?.message}
           </Form.Text>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formImagen">
+        <Form.Group className="mb-3" controlId="formDescripcionAmplia">
           <Form.Label>Descripción Amplia*</Form.Label>
           <Form.Control
             type="text"
             placeholder="Ej: El café americano es una bebida caliente que consiste en un espresso diluido con agua caliente, lo que resulta en una taza de café suave y aromático. Es una opción popular para aquellos que prefieren un café menos intenso que el espresso tradicional. Perfecto para disfrutar en cualquier momento del día."
             as="textarea"
+            {
+              ...register("descripcionAmplia",{
+                required: "la descripcion Amplia es requerida",
+                minLength: {
+                  value: 30,
+                  message: "la descripcion debe contener por lo menos 30 caracteres"
+                },
+                maxLength: {
+                  value: 200,
+                  message: "la descripcion amplia solo puede tener 200 caracteres como maximo"
+                }
+              })
+            }
           />
           <Form.Text className="text-danger">
-            prueba de error
+            {errors.descripcionAmplia?.message}
           </Form.Text>
         </Form.Group>
 
