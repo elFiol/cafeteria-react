@@ -2,7 +2,7 @@ import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
 const FormularioProducto = () => {
-  const {register , handleSubmit, formState: {errors}} = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const productoValidado = (producto) => {
     console.log(producto)
@@ -38,19 +38,42 @@ const FormularioProducto = () => {
           <Form.Control
             type="number"
             placeholder="Ej: 50"
+            {
+            ...register("precio", {
+              required: "el Precio es obligatorio",
+              max: {
+                value: 100000,
+                message: "El Precio no puede sobresalir de los 100.000"
+              },
+              min: {
+                value: 1,
+                message: "el producto no puede ser gratis aqui"
+              },
+              pattern: {
+                value: /^\d+$/,
+                message: "El precio debe ser un número"
+              }
+            })
+            }
           />
           <Form.Text className="text-danger">
-          prueba de error
+            {errors.precio?.message}
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formImagen">
           <Form.Label>Imagen URL*</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ej: https://www.pexels.com/es-es/vans-en-blanco-y-negro-fuera-de-la-decoracion-para-colgar-en-la-pared-1230679/"
+            placeholder="Ej: https://www.ejemplo.com"
+            {...register("imagen", {
+              pattern: {
+                value: /^((https?|ftp):\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(\/\S*)?$/i,
+                message: "Por favor, ingresa una URL válida"
+              }
+            })}
           />
           <Form.Text className="text-danger">
-        prueba de error
+            {errors.imagen?.message}
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formPrecio">
@@ -63,7 +86,7 @@ const FormularioProducto = () => {
             <option value="salado">Salado</option>
           </Form.Select>
           <Form.Text className="text-danger">
-          prueba de error
+            prueba de error
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formImagen">
@@ -74,7 +97,7 @@ const FormularioProducto = () => {
             as="textarea"
           />
           <Form.Text className="text-danger">
-        prueba de error
+            prueba de error
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formImagen">
@@ -85,10 +108,10 @@ const FormularioProducto = () => {
             as="textarea"
           />
           <Form.Text className="text-danger">
-        prueba de error
+            prueba de error
           </Form.Text>
         </Form.Group>
-        
+
         <Button type="submit" variant='success'>
           Guardar
         </Button>
