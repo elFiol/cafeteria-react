@@ -52,6 +52,10 @@ const FormularioProducto = () => {
               pattern: {
                 value: /^\d+$/,
                 message: "El precio debe ser un número"
+              },
+              maxLength: {
+                value: 10,
+                message: "El precio solo puede tener 10 caracteres como maximo"
               }
             })
             }
