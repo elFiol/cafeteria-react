@@ -71,8 +71,8 @@ const FormularioProducto = () => {
             placeholder="Ej: https://www.ejemplo.com"
             {...register("imagen", {
               pattern: {
-                value: /^((https?|ftp):\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(\/\S*)?$/i,
-                message: "Por favor, ingresa una URL válida"
+                value: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|gif|png)/,
+                message: "Por favor, ingresa una URL de imagen válida"
               },
               required: "la imagen es obligatoria"
             })}
