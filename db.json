@@ -1,22 +1,31 @@
 {
-    "productos":[
-        {
-            "id":"1",
-            "nombreProducto":"café",
-            "precio": 1500,
-            "categoria":"Infusiones",
-            "descripcionBreve": "café rico",
-            "descripcionAmplia": "café rico con mas detalles",
-            "imagen":"https://images.pexels.com/photos/414555/pexels-photo-414555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        },
-        {
-            "id":"2",
-            "nombreProducto":"té",
-            "precio": 1000,
-            "categoria":"Infusiones",
-            "descripcionBreve": "té rico",
-            "descripcionAmplia": "té rico con mas detalles",
-            "imagen":"https://cloudfront-us-east-1.images.arcpublishing.com/semana/SEP3XASCANE2PO47OWI7PFWK3E.jpg"
-        }
-    ]
+  "productos": [
+    {
+      "id": "1",
+      "nombreProducto": "café",
+      "precio": 1500,
+      "categoria": "Infusiones",
+      "descripcionBreve": "café rico",
+      "descripcionAmplia": "café rico con mas detalles",
+      "imagen": "https://images.pexels.com/photos/414555/pexels-photo-414555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "2",
+      "nombreProducto": "té",
+      "precio": 1000,
+      "categoria": "Infusiones",
+      "descripcionBreve": "té rico",
+      "descripcionAmplia": "té rico con mas detalles",
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/semana/SEP3XASCANE2PO47OWI7PFWK3E.jpg"
+    },
+    {
+      "id": "5135",
+      "nombreProducto": "El termo",
+      "precio": "2000",
+      "imagen": "https://www.lumilagro.com.ar/wp-content/uploads/2021/01/termo-lumilagro-luminox-boca-escudo-1.jpg",
+      "descripcionBreve": "un termo bello",
+      "descripcionAmplia": "ifweohiofewhfioew fewoifjewoijfoewijfew fiewwjifewofiewjiofewoifjewiojfweoi eifjewjfpwejfewjfewpojfewopjfewopn",
+      "categoria": "Infusiones"
+    }
+  ]
 }

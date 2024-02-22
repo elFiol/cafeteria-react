@@ -1,11 +1,13 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm, Controller } from "react-hook-form";
+import { CrearProductoAPI } from "../../../helpers/queries";
 
 const FormularioProducto = () => {
   const { register, handleSubmit, formState: { errors }, control } = useForm();
 
   const productoValidado = (producto) => {
     console.log(producto)
+    CrearProductoAPI(producto)
   }
   return (
     <section className="container mainSection">
@@ -92,8 +94,8 @@ const FormularioProducto = () => {
                 <option value="">Seleccione una opcion</option>
                 <option value="Infusiones">Infusiones</option>
                 <option value="Batidos">Batidos</option>
-                <option value="dulce">Dulce</option>
-                <option value="salado">Salado</option>
+                <option value="Dulce">Dulce</option>
+                <option value="Salado">Salado</option>
               </Form.Select>
             )}
           />

@@ -11,3 +11,22 @@ export const leerProductoAPI = async () => {
     console.log(error);
   }
 };
+// post
+
+export const CrearProductoAPI = async (productoNuevo) => {
+  try {
+    const respuesta = await fetch(URL_PRODUCTO,{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(productoNuevo)
+    })
+    console.log(respuesta)
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// put - patch
+// delete
