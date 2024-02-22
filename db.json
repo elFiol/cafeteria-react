@@ -26,6 +26,24 @@
       "descripcionBreve": "un termo bello",
       "descripcionAmplia": "ifweohiofewhfioew fewoifjewoijfoewijfew fiewwjifewofiewjiofewoifjewiojfweoi eifjewjfpwejfewjfewpojfewopjfewopn",
       "categoria": "Infusiones"
+    },
+    {
+      "id": "1cde",
+      "nombreProducto": "cafe",
+      "precio": "1500",
+      "imagen": "https://www.lumilagro.com.ar/wp-content/uploads/2021/01/termo-lumilagro-luminox-boca-escudo-1.jpg",
+      "descripcionBreve": "ijpiewfjfwefewfewewf",
+      "descripcionAmplia": "jofewjieweijfeijwefiweojewfopjpewofjpoewjopewjgpowegjgoewpjgewopgewjop opejwgopjegwopjnggjpoewjgewopgewjgewgewogpewgjewgoewpgjewogpewjgewop\n",
+      "categoria": "Batidos"
+    },
+    {
+      "id": "2a67",
+      "nombreProducto": "cafe",
+      "precio": "1922",
+      "imagen": "https://www.lumilagro.com.ar/wp-content/uploads/2021/01/termo-lumilagro-luminox-boca-escudo-1.jpg",
+      "descripcionBreve": "fewoifjewpkofewopfew",
+      "descripcionAmplia": "wjpwijwejiieijejiejwewejiwefjwefjwefufewoifiGONJIIEWFEWEWFFEWWEFewfwFEWFEFEFEaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAaaaaaAAAAAAAAAaaaAAAAAAAaaaAAAAAAAaaaaAAAAAAAAaaaAAAAAAAA\n",
+      "categoria": "Batidos"
     }
   ]
 }
