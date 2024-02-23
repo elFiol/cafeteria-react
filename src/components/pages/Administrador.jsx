@@ -9,7 +9,7 @@ const Administrador = () => {
   const [productos, setProductos] = useState([])
   useEffect(() => {
     consultarAPI()
-  }, [])
+  }, [productos])
   const consultarAPI = async () => {
     try {
       const respuesta = await leerProductoAPI()
