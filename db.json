@@ -10,15 +10,6 @@
       "imagen": "https://images.pexels.com/photos/414555/pexels-photo-414555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": "2",
-      "nombreProducto": "té",
-      "precio": 1000,
-      "categoria": "Infusiones",
-      "descripcionBreve": "té rico",
-      "descripcionAmplia": "té rico con mas detalles",
-      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/semana/SEP3XASCANE2PO47OWI7PFWK3E.jpg"
-    },
-    {
       "id": "5135",
       "nombreProducto": "El termo",
       "precio": "2000",
@@ -34,15 +25,6 @@
       "imagen": "https://www.lumilagro.com.ar/wp-content/uploads/2021/01/termo-lumilagro-luminox-boca-escudo-1.jpg",
       "descripcionBreve": "ijpiewfjfwefewfewewf",
       "descripcionAmplia": "jofewjieweijfeijwefiweojewfopjpewofjpoewjopewjgpowegjgoewpjgewopgewjop opejwgopjegwopjnggjpoewjgewopgewjgewgewogpewgjewgoewpgjewogpewjgewop\n",
-      "categoria": "Batidos"
-    },
-    {
-      "id": "2a67",
-      "nombreProducto": "cafe",
-      "precio": "1922",
-      "imagen": "https://www.lumilagro.com.ar/wp-content/uploads/2021/01/termo-lumilagro-luminox-boca-escudo-1.jpg",
-      "descripcionBreve": "fewoifjewpkofewopfew",
-      "descripcionAmplia": "wjpwijwejiieijejiejwewejiwefjwefjwefufewoifiGONJIIEWFEWEWFFEWWEFewfwFEWFEFEFEaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAaaaaaAAAAAAAAAaaaAAAAAAAaaaAAAAAAAaaaaAAAAAAAAaaaAAAAAAAA\n",
       "categoria": "Batidos"
     }
   ]
